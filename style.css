@@ -1,0 +1,143 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#page {
+    width: 100%;
+  max-width: 1000px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+
+#link-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;
+}
+
+.nav-link:hover {
+cursor: pointer;
+}
+
+.highlighter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transition: all .2s;
+    z-index: -1;
+}
+
+.nav-link:hover .highlighter {
+    border-top: solid 2px orange;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.current .highlighter {
+    border-top: solid 2px orange;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.current:hover .highlighter {
+    border-top: solid 2px orange;
+    top: 100%;
+}
+
+.nav-link, .current:hover {
+    cursor: default;
+}
+  
+.content {
+    margin-top: 20px;
+}
+
+.project {
+    border-left: solid 2px orange;
+    padding: 10px;
+    padding-left: 20px;
+    box-shadow: 2px 2px 5px gray;
+    transition: all .2s;
+}
+
+.has-details:hover {
+    cursor: pointer;
+    box-shadow: 3px 4px 5px gray;
+}
+
+.expanded {
+    cursor: default;
+    box-shadow: 3px 4px 5px gray;
+}
+
+.expanded:hover {
+    cursor: default;
+    box-shadow: 3px 4px 5px gray;
+}
+
+.collapse-button {
+    float: right;
+}
+
+.collapse-button:hover {
+    cursor: pointer;
+    border-bottom: solid 1px orange;
+}
+
+.hidden {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
+
+@media only screen and (max-device-width: 600px) {
+  #nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #title-box {
+    padding-right: 30px;
+  }
+  #title-box>h1 {
+    font-size: large;
+    text-align: left;
+    
+  }
+  #link-box {
+    flex-wrap: wrap;
+  }
+  #link-box>.nav-link {
+    font-size: small;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 600px) {
+  #nav {
+    flex-direction: row;
+}
+
