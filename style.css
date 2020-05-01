@@ -7,6 +7,10 @@ body {
   justify-content: center;
 }
 
+p {
+    font-size: medium;
+}
+
 #page {
     width: 100%;
   max-width: 1000px;
