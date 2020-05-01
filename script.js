@@ -28,19 +28,19 @@ contents.forEach((item) => {
   };
 
   content.querySelectorAll(".details").forEach((node) => {
-    const collapseButton = node.parentElement.children[0];
+    const projectDiv = node.parentElement;
+    const more = projectDiv.querySelector(".expand");
 
-    node.parentElement.onclick = () => {
-      node.parentElement.classList.add("expanded");
+    more.onclick = () => {
+      if (projectDiv.classList.contains("expanded")) {
+        projectDiv.classList.remove("expanded");
+        node.classList.add("hidden");
+        more.innerText = "More...";
+        return;
+      }
+      projectDiv.classList.add("expanded");
       node.classList.remove("hidden");
-      collapseButton.classList.remove("hidden");
-    };
-
-    collapseButton.onclick = (e) => {
-      e.stopPropagation();
-      node.parentElement.classList.remove("expanded");
-      node.classList.add("hidden");
-      collapseButton.classList.add("hidden");
+      more.innerText = "Less...";
     };
   });
 });

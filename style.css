@@ -1,5 +1,7 @@
 html {
   font-family: sans-serif;
+  overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
 }
 
 body {
@@ -9,6 +11,11 @@ body {
 
 p {
     font-size: 12pt;
+    margin-top: 8px;
+}
+
+li {
+    padding: 3px;
 }
 
 #page {
@@ -81,16 +88,32 @@ cursor: pointer;
 }
 
 .project {
+    margin-top: 20px;
     border-left: solid 2px orange;
+    border-bottom: solid 2px orange;
     padding: 10px;
     padding-left: 20px;
     box-shadow: 2px 2px 5px gray;
-    transition: all .2s;
 }
 
-.has-details:hover {
-    cursor: pointer;
-    box-shadow: 3px 4px 5px gray;
+.project-description-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-text {
+    flex: 1;
+    flex-direction: column;
+    width: 50%;
+}
+
+.project-image {
+   flex: 1;
+    height: 50%;
+}
+
+.thumbnail {
+    width: 100%;
 }
 
 .expanded {
@@ -98,18 +121,46 @@ cursor: pointer;
     box-shadow: 3px 4px 5px gray;
 }
 
-.expanded:hover {
-    cursor: default;
-    box-shadow: 3px 4px 5px gray;
+
+.section-title {
+    margin: 0;
 }
 
-.collapse-button {
-    float: right;
+.github-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    border-bottom: solid 1px white;
 }
 
-.collapse-button:hover {
+.github-link:hover {
     cursor: pointer;
-    border-bottom: solid 1px orange;
+}
+
+.github-link:hover>i {
+    color: orange;
+}
+
+.github-link>h5 {
+    padding-left: 10px;
+    font-weight: normal;
+    color: rgb(59, 59, 59);
+    margin: 0;
+}
+
+.github-link>i {
+    font-size: 20pt;
+    color: rgb(59, 59, 59);
+}
+
+.expand {
+    color: gray;
+}
+
+.expand:hover {
+    cursor: pointer;
+    text-decoration: underline orange;
 }
 
 .hidden {
