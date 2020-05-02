@@ -127,11 +127,8 @@ cursor: pointer;
 }
 
 .github-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: table;
     margin-top: 8px;
-    border-bottom: solid 1px white;
 }
 
 .github-link:hover {
@@ -142,7 +139,13 @@ cursor: pointer;
     color: orange;
 }
 
+.github-link:hover>h5 {
+    text-decoration: underline orange;
+}
+
 .github-link>h5 {
+    display: table-cell;
+    vertical-align: middle;
     padding-left: 10px;
     font-weight: normal;
     color: rgb(59, 59, 59);
@@ -150,6 +153,7 @@ cursor: pointer;
 }
 
 .github-link>i {
+    display: table-cell;
     font-size: 20pt;
     color: rgb(59, 59, 59);
 }
