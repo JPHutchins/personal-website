@@ -88,3 +88,5 @@ const loadListeningPage = () => {
   embedClassicalNode.innerHTML = embedClassical;
   embedElectronicNode.innerHTML = embedElectronic;
 };
+
+setTimeout(loadListeningPage, 0);
