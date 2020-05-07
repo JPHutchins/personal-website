@@ -173,6 +173,19 @@ cursor: pointer;
     left: -9999px !important;
  }
 
+.two-columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex: 1;
+}
+
+.column>iframe {
+    padding-top: 5px;
+}
+
 @media only screen and (max-device-width: 600px) {
   #nav {
     flex-direction: column;
@@ -192,6 +205,9 @@ cursor: pointer;
   #link-box>.nav-link {
     font-size: small;
     margin: auto;
+  }
+  .two-columns {
+      flex-direction: column;
   }
 }
 
