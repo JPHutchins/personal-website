@@ -27,7 +27,7 @@ contents.forEach((item) => {
     current.content.classList.remove("hidden");
 
     if (item === "music") {
-        loadListeningPage();
+        setTimeout(loadListeningPage, 0);
     }
   };
 
@@ -89,4 +89,3 @@ const loadListeningPage = () => {
   embedElectronicNode.innerHTML = embedElectronic;
 };
 
-setTimeout(loadListeningPage, 0);

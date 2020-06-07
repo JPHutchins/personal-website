@@ -110,7 +110,6 @@ cursor: pointer;
 .project-text {
     flex: 2;
     flex-direction: column;
-    width: 50%;
 }
 
 .project-image {
