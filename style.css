@@ -93,6 +93,19 @@ cursor: pointer;
     padding-left: 20px;
 }
 
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.showcase {
+    flex: 0 1 300px;
+    margin: 10px;
+    border: solid;
+    height: 400px;
+}
+
 .project {
     margin-top: 20px;
     border-left: solid 2px orange;
