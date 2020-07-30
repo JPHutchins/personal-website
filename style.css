@@ -18,6 +18,10 @@ li {
     padding: 3px;
 }
 
+a {
+    text-decoration: none;
+}
+
 #page {
     width: 100%;
   max-width: 85vw;
@@ -91,6 +95,7 @@ cursor: pointer;
     margin-top: 20px;
     padding: 10px;
     padding-left: 20px;
+    margin-bottom: 60px;
 }
 
 .wrap {
@@ -100,10 +105,28 @@ cursor: pointer;
 }
 
 .showcase {
-    flex: 0 1 300px;
-    margin: 10px;
-    border: solid;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    flex: 1 1 300px;
+    margin: 20px;
     height: 400px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px -2px rgb(194, 179, 159);
+    transition: box-shadow ease-out .15s;
+    background-color: rgb(182, 150, 106);
+    color: white;
+    text-align: center;
+}
+
+.showcase:hover {
+    box-shadow: 0px 0px 10px 2px rgb(194, 179, 159);
+}
+
+#open-energy-view-banner-image {
+    height: 100%;
+    overflow: hidden;
+    background-image: url("./static/open-energy-view-dashboard.png");
+    background-size: cover;
 }
 
 .project {
@@ -116,18 +139,18 @@ cursor: pointer;
 }
 
 .project-description-container {
+    margin-top: 80px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap
 }
 
 .project-text {
-    flex: 2;
+    flex: 1 1 600px;
     flex-direction: column;
 }
 
 .project-image {
-   flex: 1;
-    height: 50%;
+   flex: 2 2 300px;
 }
 
 .thumbnail {
