@@ -48,11 +48,6 @@ contents.forEach((item) => {
     };
   });
 
-  document.getElementById("library-finder-banner").onclick = () => {
-    document.getElementById("library-finder-project").scrollIntoView();
-  }
-
-
 });
 
 const embedClassical =
