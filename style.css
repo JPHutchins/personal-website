@@ -31,7 +31,6 @@ a {
 }
 
 footer {
-    margin-top: 100px;
     font-size: 8pt;
     color: gray;
 }
@@ -60,9 +59,25 @@ footer {
   align-items: center;
 }
 
-#link-box {
+#page-link-box {
   display: flex;
   flex-direction: row;
+}
+
+#link-box {
+    display: flex;
+flex-direction: row;
+justify-content: right;
+padding: 5px;
+
+}
+
+#link-box > a {
+    padding: 0px 10px 0px 10px;
+}
+
+#link-box > a > i {
+    font-size: 15pt;
 }
 
 .nav-link {
@@ -114,7 +129,7 @@ cursor: pointer;
 }
   
 .content {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .frameless {
@@ -152,7 +167,7 @@ cursor: pointer;
 }
 
 .project-description-container {
-    margin-top: 40px;
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     padding: 40px 80px 40px 80px;
@@ -283,10 +298,10 @@ cursor: pointer;
     text-align: left;
     
   }
-  #link-box {
+  #page-link-box {
     flex-wrap: wrap;
   }
-  #link-box>.nav-link {
+  #page-link-box>.nav-link {
     font-size: small;
     margin: auto;
   }
