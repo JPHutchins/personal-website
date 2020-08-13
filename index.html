@@ -16,22 +16,26 @@
                 <h1>Crumpled Paper</h1>
             </div>
             <div id="link-box">
-                <h2 class="nav-link current" id="home-link">
+                <h4 class="nav-link current" id="home-link">
                     Home
                     <div class="highlighter"></div>
-                </h2>
-                <h2 class="nav-link" id="music-link">
-                    Music
+                </h4>
+                <h4 class="nav-link" id="articles-link">
+                    Articles
                     <div class="highlighter"></div>
-                </h2>
-                <h2 class="nav-link" id="projects-link">
+                </h4>
+                <h4 class="nav-link" id="projects-link">
                     Projects
                     <div class="highlighter"></div>
-                </h2>
-                <h2 class="nav-link" id="about-link">
+                </h4>
+                <h4 class="nav-link" id="music-link">
+                    Music
+                    <div class="highlighter"></div>
+                </h4>
+                <h4 class="nav-link" id="about-link">
                     About
                     <div class="highlighter"></div>
-                </h2>
+                </h4>
             </div>
         </div>
 
@@ -46,15 +50,15 @@
                     </a>
                     <h4>Scalable analysis of home energy consumption</h4>
                     <div class="screenshots">
-                        <div class="thumbnail"><img  src=static/open-energy-view-dashboard.png></div>
-                        <div class="thumbnail"><img  src=static/open-energy-view-history.png></div>
-                        <div class="thumbnail"><img  src=static/open-energy-view-trends.png></div>
+                        <div class="thumbnail"><img src=static/open-energy-view-dashboard.png></div>
+                        <div class="thumbnail"><img src=static/open-energy-view-history.png></div>
+                        <div class="thumbnail"><img src=static/open-energy-view-trends.png></div>
                     </div>
                     <a href="https://github.com/JPHutchins/open-energy-view" target="_blank" class="github-link">
                         <i class="fab fa-github"></i>
                         <h5>React, Chart.js, Ramda, Fluture, Python, Flask, SQLAlchemy</h5>
                     </a>
-                 
+
 
 
                     <h4>Key Features</h4>
@@ -139,7 +143,7 @@
 
             </div>
 
-       
+
 
             <div class="project-description-container" id="library-finder-project">
                 <div class="project-text" id="library-explorer">
@@ -155,14 +159,15 @@
                     </div>
                     <h4>Platform agnostic command line utility that finds media libraries</h4>
                     <div class="screenshots">
-                        <img class="thumbnail" src=static/library_explorer_screen_dylan.png>
-
+                        <div class="thumbnail">
+                            <img src=static/library_explorer_screen_dylan.png>
+                        </div>
                     </div>
                     <a href="https://github.com/JPHutchins/library_finder" target="_blank" class="github-link">
                         <i class="fab fa-github"></i>
                         <h5>C/C++, Javascript, HTML, CSS</h5>
                     </a>
-                  
+
                     <h4>Features</h4>
                     <ul class="bullet-points">
                         <li>
@@ -205,7 +210,7 @@
 
             </div>
 
-            <div class="project-description-container" id="library-finder-project">
+            <div class="project-description-container">
                 <div class="project-text">
                     <h2 class="section-title">Python Module for PG&E Share My Data Self Access API</h2>
                     <div class="row row-links">
@@ -219,8 +224,8 @@
                         <i class="fab fa-github"></i>
                         <h5>Python</h5>
                     </a>
-                
-                    <h4>Features & Future</h4>
+
+                    <h4>Features</h4>
                     <ul class="bullet-points">
                         <li>
                             Automate the registration, testing, and data acquisition process of
@@ -228,8 +233,11 @@
                         </li>
                         <li>
                             Parse ESPI XML into a Python generator for easy export or manipulation
-                            while maintaining very low memory usage
+                            while maintaining low memory usage
                         </li>
+                    </ul>
+                    <h4>Future</h4>
+                    <ul class="bullet-points">
                         <li>
                             Generalize for use with all utility companys that conform to the ESPI
                             standard globally
@@ -240,7 +248,48 @@
             </div>
         </div>
 
+
+        <div class="content hidden" id="articles">
+            <div class="project-description-container">
+                <div class="project-text">
+                    <div id="medium-widget"></div>
+                    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+                    <script>MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@jphutchins_4263/quick-start-with-fluture-requests-using-axios-b73ebbc2d240", "postsPerLine": 2, "limit": 1, "picture": "small", "fields": ["description", "author", "publishAt"], "ratio": "square" } })</script>
+
+                </div>
+            </div>
+        </div>
+
+
         <div class="content hidden" id="music">
+
+            <div class="project-description-container">
+                <div class="project-text">
+                    <h2>Publications for Piano Students and Teachers</h2>
+                    <span><a href="static/piano-pdfs/Progressive.pdf" target="-blank">
+                        Hutchins - Progressive Scales, Chords, and Arpeggios for Piano</a></span>
+                    <h4>Series 1</h4>
+                    <span><a href="static/piano-pdfs/Series 1/Lavender_s_Blue.pdf" target="-blank">
+                        Traditional - Lavender's Blue</a></span> 
+                    <h4>Series 2</h4>
+                    <span><a href="static/piano-pdfs/Series 2/Kaba op 39 1 and 2.pdf" target="-blank">
+                        Kabalevsky - Melody and Polka from Op. 39</a></span>
+                    <span><a href="static/piano-pdfs/Series 2/A_Little_Joke.pdf" target="-blank">
+                        Kabalevsky - A Little Joke</a></span>
+                    <span><a href="static/piano-pdfs/Series 2/Arietta clementi.pdf" target="-blank">
+                        Clementi - Arietta</a></span>
+                    <span><a href="static/piano-pdfs/Series 2/Hadyn - Trio in G Major.pdf" target="-blank">
+                        Hadyn - Trio in G Major from Sonata in C Major</a></span>
+                    <span><a href="static/piano-pdfs/Series 2/Minuetto- hook.pdf" target="-blank">
+                        Hook - Minuetto</a></span>
+                    <span><a href="static/piano-pdfs/Series 2/Vivace - Hook.pdf" target="-blank">
+                        Hook - Vivace</a></span>
+                    <h4>Series 3</h4>
+                    <span><a href="static/piano-pdfs/Series 3/Air_in_F_Major.pdf" target="-blank">
+                        J.C. Bach - Air in F Major BWV anh. 131</a></span>
+                </div>
+            </div>
+
             <div class="project-description-container">
                 <div class="project-text">
                     <h2>Recordings</h2>
@@ -250,17 +299,70 @@
                     <div id="embed-electronic"></div>
                 </div>
             </div>
+
+            <div class="project-description-container">
+                <div class="project-text">
+                    <h4>Prepared Piano Notes for Alter (2007)</h4>
+                    <div class="screenshots">
+                        <div class="fullsize"><img src=static/prepnotes.jpg /></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="content hidden" id="projects">
+
+            <div class="project-description-container">
+                <div class="project-text">
+                    <h2 class="section-title">Water Tuned Glassophone</h2>
+                    <h4>Original Instrument</h4>
+                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12641148&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <div
+                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/j-p-hutchins" title="J.P. Hutchins" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">J.P. Hutchins</a> · <a
+                            href="https://soundcloud.com/j-p-hutchins/hutchins-water-tube-improv-7"
+                            title="Hutchins - Water Tube Improv 7" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">Hutchins - Water Tube Improv 7</a></div>
+                    <div class="screenshots">
+                        <div class="thumbnail"><img src=static/constlarge.jpg /></div>
+                        <div class="thumbnail"><img src=static/glass.jpg /></div>
+                    </div>
+                    <p>
+                        The water tuned glassophone is an original mallet instrument constructed of lenths
+                        of glass tubing closed at one end. Unlike traditional mallet instruments, such as
+                        the marimba, each pitch can be tuned by varying the amount of water in the tube.
+                        This series of improvisations gives an idea of the sound using a traditional equal
+                        temperment tuning with the addition of two quarter tone tubes. The dynamic range of
+                        the instrument is impressive though the recordings are dynamically compressed for
+                        easier listening. Played softly, the instrument produces a clean sustained tone;
+                        played more aggressively you will hear a sharp &quot;metallic&quot; attack to each
+                        tone.
+                    </p>
+                    <div class="screenshots">
+                        <div class="thumbnail"><img src=static/cuttingtubes.jpg /></div>
+                        <div class="thumbnail"><img src=static/construction.jpg></div>
+                    </div>
+                    <p>
+                        The glass tubes were cut to approximate lengths based on experimentation and then tuned
+                        by filling them with water. In order for the tube to sound it must be as free from
+                        constraint as possible allowing it to vibrate.
+                    </p>
+
+                </div>
+
+            </div>
+
             <div class="project-description-container" id="library-finder-project">
                 <div class="project-text">
                     <h2 class="section-title">Portable Subwoofer</h2>
                     <h4>Easy to Carry PA Subwoofer</h4>
                     <div class="screenshots">
-                        <div class="thumbnail"><img  src=static/12inchsonooutside.jpg/></div>
-                        <div class="thumbnail"><img  src=static/sonotubescale.jpg></div>
-                        <div class="thumbnail"><img  src=static/12inchsonointerior.jpg></div>
+                        <div class="thumbnail"><img src=static/12inchsonooutside.jpg /></div>
+                        <div class="thumbnail"><img src=static/sonotubescale.jpg></div>
+                        <div class="thumbnail"><img src=static/12inchsonointerior.jpg></div>
                     </div>
                     <h4>Design Goals</h4>
                     <ul class="bullet-points">
@@ -268,7 +370,7 @@
                             Light enough to carry one or two using handles or shoulder straps
                         </li>
                         <li>
-                            Provide PA level 110dBa SPL with reasonable distortion
+                            Provide PA level 110dB SPL with reasonable distortion
                         </li>
                         <li>
                             Frequency extension to 40Hz
@@ -278,11 +380,11 @@
                         </li>
                     </ul>
                     <div class="screenshots">
-                        <div class="thumbnail"><img  src=static/tuning-ports-cropped.jpg/></div>
-                        <div class="thumbnail"><img  src=static/response.jpg></div>
-                        <div class="thumbnail"><img  src=static/internal-brace.jpg></div>
+                        <div class="thumbnail"><img src=static/tuning-ports-cropped.jpg /></div>
+                        <div class="thumbnail"><img src=static/response.jpg></div>
+                        <div class="thumbnail"><img src=static/internal-brace.jpg></div>
                     </div>
-                    <h4>Impementation and Testing</h4>
+                    <h4>Implementation and Testing</h4>
                     <ul class="bullet-points">
                         <li>
                             Prototype was tuned manually by leaving extra length on the ports as pictured
@@ -298,70 +400,108 @@
                 </div>
 
             </div>
+
         </div>
 
         <div class="content hidden" id="about">
-            <div class="project">
-                <h3>Bio</h3>
-                <p>
-                    J.P. Hutchins grew up on a small farm in Southern Oregon where he had the opportunity to explore the
-                    outdoors identifying insects, reptiles, and anything that moved, really, even nematomorphs. He also
-                    had
-                    the chance to drive a radio flyer off of a steep driveway into a blackberry bramble and to eat lots
-                    of
-                    those berries. From a young age, J.P. was exploring electronics and making DOS boot disks so that
-                    he could run 3D games on his parent's 486. His affinity for mathematics, calculus and engineering
-                    lead
-                    to a love of classical music and jazz. By age 14 he was channeling this creativity into grandiose
-                    (*angsty) orchestral scores. * Imagine what a Mahler-obsessed teenager would write
-                    in between Final Fantasy VII / high fantasy / sci-fi sessions.
-                </p>
-                <p>
-                    The need to invent changes over time and J.P.'s creative spirit is refocused to develop elegant
-                    software, hardware
-                    and systems.
-                </p>
-                <h3>Musician</h3>
-                <p>
-                    As an instrumentalist, J.P. began horn & trumpet in elementary school, piano in the 7th grade and
-                    organ
-                    in 10th grade. He was fortunate to study theory and composition with Steve McManus, piano & organ
-                    with
-                    Helen Strahl and to receive an AGO scholarship to study organ with Dr. Margaret Evans. As a trumpet
-                    player, J.P. studied with Bruce Dresser and is
-                    dedicated to the classical techniques of Arnold Schlossberg, James Stamp and Roy Poper, professer of
-                    trumpet at Oberlin. These techniques encourage consistency of tone & intonation, articulation, and
-                    efficiency through wide ranges and demanding orchestral passages. J.P. performed as principal
-                    trumpet in
-                    the YSSO, led by Dr. Cynthia Hutton, for many memorable performances.
-                </p>
-                <h3>Composer</h3>
-                <p>
-                    Studying composition at the Oberlin Conservatory of Music from 2004-2008, J.P. developed an interest
-                    in
-                    American Experimentalism and electronic/computer music with the help of professors Randy Coleman &
-                    Ross Feller.
-                    Much of his music features systems based on chance procedures or more rigid mathematical functions
-                    while a primary
-                    goal is to a achieve a balance between consonant sonorities and romantically influenced atonal
-                    passages.
-                    Maintaining an interest in counterpoint, evolving motives, and the full palette of each instrument
-                    results in a kind of interplay between a modern and traditional aesthetic.
-                </p>
-                <p>
-                    That said, J.P. really likes folk music, funk, hip-hop, EDM, and most any music that challenges the
-                    listener to either get down, look within, or get up and make the world a better place.
-                </p>
-                <p>
-                    In his spare time, J.P. tinkers with electronics, assorted DIY projects, and the development of an
-                    improvisational computer music interface that feeds back analog and digital material in a sort of
-                    real-time compositional computer game. Of funk.
-                </p>
-                <p>E-mail J.P. : jphutchins@gmail.com</p>
+            <div class="project-description-container">
+                <div class="project-text">
+                    <h3>About Crumpled Paper and J.P. Hutchins</h3>
+                    <p>
+                        Crumpled Paper is my website for personal and open source projects. The name originates
+                        from the notion that work is built on a foundation of "crumpled paper". Glancing
+                        around my desk this conclusion is obvious and there you will find projects in various 
+                        stages: flat, wrinkled, and crumpled.
+                    </p>
+                    <h4>Technology</h4>
+                    <p>
+                        I am a software and hardware engineer that likes using C, Python and JavaScript. My favorite
+                        language is the one I've been using in the past week. Lately I am enjoying learning about
+                        functional programming.
+                    </p>
+                    <p>
+                        All of my projects run on my local set of servers using Raspberry Pi, ARM, x86, Ubuntu, KVM, Nginx,
+                        uWSGI, SQLite, PostgreSQL, Redis, and Docker. I maintain a multi LAN multi VLAN network to
+                        support all of these services.
+                    </p>
+                    <p>
+                        For MCU I like developing on ESP8266 and ESP32 because they are so well integrated into
+                        the Arduino ecosystem. Lately I have moved onto the STM32 family for work that requires DSP or
+                        more accurate ADC.
+                    </p>
+                    <h4>Goals</h4>
+                    <p>
+                        My primary goal is to work on software and hardware that helps to address the climate change
+                        crisis. That has lead me to the smart home automation (IoT) industry I where worked on
+                        everything
+                        from architectural drawings to construction, from
+                        programming to support for three years at <a href="https://jlintegrated.com/" target="_blank">
+                            JL Integrated</a>. Additionally I contribute to the Denon and Transmission integrations of
+                        <a href="https://www.home-assistant.io/" target="_blank">
+                            Home Assistant</a>, the leading open-source smart home platform.
+                    </p>
+                    <p>
+                        Another longterm goal is to setup a woodshop and minimal anechoic chamber so that I can commence
+                        serious development of modern loud speaker solutions for the smart home.
+                    </p>
+                </div>
+            </div>
+            <div class="project-description-container">
+                <div class="project-text">
+                    <h3>Musician</h3>
+                    <p>
+                        As an instrumentalist, J.P. began horn & trumpet in elementary school, piano in the 7th grade
+                        and
+                        organ
+                        in 10th grade. He was fortunate to study theory and composition with Steve McManus, piano &
+                        organ
+                        with
+                        Helen Strahl and to receive an AGO scholarship to study organ with Dr. Margaret Evans. As a
+                        trumpet
+                        player, J.P. studied with Bruce Dresser and is
+                        dedicated to the classical techniques of Arnold Schlossberg, James Stamp and Roy Poper,
+                        professer of
+                        trumpet at Oberlin. These techniques encourage consistency of tone & intonation, articulation,
+                        and
+                        efficiency through wide ranges and demanding orchestral passages. J.P. performed as principal
+                        trumpet in
+                        the YSSO, led by Dr. Cynthia Hutton, for many memorable performances.
+                    </p>
+                    <h3>Composer</h3>
+                    <p>
+                        Studying composition at the Oberlin Conservatory of Music from 2004-2008, J.P. developed an
+                        interest
+                        in
+                        American Experimentalism and electronic/computer music with the guidance of professors Randy
+                        Coleman
+                        &
+                        Ross Feller.
+                        Much of his music features systems based on chance procedures or more rigid mathematical
+                        functions
+                        while a primary
+                        goal is to a achieve a balance between consonant sonorities and romantically influenced atonal
+                        passages.
+                        Maintaining an interest in counterpoint, evolving motives, and the full palette of each
+                        instrument
+                        results in a kind of interplay between a modern and traditional aesthetic.
+                    </p>
+                    <p>
+                        That said, J.P. really likes folk music, funk, hip-hop, EDM, and most any music that challenges
+                        the
+                        listener to either get down, look within, or get up and make the world a better place.
+                    </p>
+                    <p>
+                        In his spare time J.P. tinkers with the development of an
+                        improvisational computer music interface that feeds back analog and digital material in a sort
+                        of
+                        real-time compositional computer game. Of funk.
+                    </p>
+                    <p>E-mail J.P. : jphutchins@gmail.com</p>
+                </div>
             </div>
         </div>
     </div>
-    <footer>Copyright 2020 J.P. Hutchins. All Rights Reserved.</footer>
+    <footer>Copyright © 2020 J.P. Hutchins. All Rights Reserved.</footer>
 </body>
 
 <script src="script.js"></script>
