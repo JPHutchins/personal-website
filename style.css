@@ -67,7 +67,7 @@ footer {
 #link-box {
     display: flex;
 flex-direction: row;
-justify-content: right;
+justify-content: flex-end;
 padding: 5px;
 
 }
