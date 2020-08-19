@@ -50,7 +50,7 @@
                     <a href="https://github.com/JPHutchins" target="_blank" class="github-link">
                         <i class="fab fa-github"></i>
                     </a>
-                    
+
                 </div>
 
             </div>
@@ -74,7 +74,8 @@
                     </div>
                     <a href="https://github.com/JPHutchins/open-energy-view" target="_blank" class="github-link">
                         <i class="fab fa-github"></i>
-                        <h5>React, Chart.js, Ramda, Fluture, Python, Flask, SQLAlchemy</h5>
+                        <h5>React, Chart.js, Ramda, Fluture, Python, Flask, Celery, RabbitMQ, SQLAlchemy, uWSGI, Nginx
+                        </h5>
                     </a>
 
 
@@ -136,11 +137,7 @@
                         </li>
                         <li>
                             Partition the backend. Translate the existing uWSGI/Flask API to
-                            a framework that more readily supports asynchronous tasks and web sockets. Communication
-                            with utility company APIs can result in long blocking requests. This
-                            is currently mitigated by enabling threading in uWSGI and starting a
-                            custom event loop in the Flask app that handles long requests to utility
-                            APIs.
+                            a framework that more readily supports asynchronous tasks and web sockets.
                         </li>
                         <li>
                             Integrate an IoT device like the NUT server for UPS or IoTaWatt
