@@ -188,6 +188,11 @@ cursor: pointer;
     display: flex;
 }
 
+.article-title {
+    font-weight: bold;
+    font-size: larger;
+}
+
 .project-image {
    flex: 2 2 300px;
 }
